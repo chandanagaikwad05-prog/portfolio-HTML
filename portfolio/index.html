@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORTFOLIO | Modern Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+    body{
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      color:#fff;
+    }
+
+    /* NAVBAR */
+    nav{
+      position:fixed;
+      top:0;left:0;width:100%;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(10px);
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    nav h2{color:#00e5ff;font-size:1.5rem}
+
+    nav ul{list-style:none;display:flex}
+    nav ul li{margin-left:25px}
+    nav ul li a{
+      color:#fff;text-decoration:none;font-weight:500;
+      transition:0.3s;
+    }
+    nav ul li a:hover{color:#00e5ff}
+
+    /* HEADER / HERO */
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:100px 20px 40px;
+    }
+
+    .hero h1{font-size:3rem;font-weight:700}
+    .hero span{color:#00e5ff}
+    .hero p{margin-top:15px;color:#ddd}
+
+    .hero a{
+      display:inline-block;margin-top:30px;
+      padding:12px 30px;border-radius:30px;
+      background:#00e5ff;color:#000;
+      text-decoration:none;font-weight:600;
+      transition:0.3s;
+    }
+    .hero a:hover{background:#00bcd4}
+
+    /* SECTIONS */
+    section{padding:80px 20px;max-width:1100px;margin:auto}
+    h2{text-align:center;font-size:2.3rem;margin-bottom:30px;color:#00e5ff}
+
+    .about p{text-align:center;max-width:800px;margin:auto;line-height:1.8;color:#e0e0e0}
+
+    /* SKILLS */
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}
+    .skill{
+      background:rgba(255,255,255,0.08);
+      padding:20px;border-radius:15px;
+      text-align:center;transition:0.3s;
+    }
+    .skill:hover{transform:translateY(-8px);background:rgba(255,255,255,0.15)}
+
+    /* PROJECTS */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+    .card{
+      background:rgba(255,255,255,0.08);
+      padding:25px;border-radius:20px;transition:0.3s;
+    }
+    .card:hover{transform:scale(1.03)}
+    .card h3{color:#00e5ff;margin-bottom:10px}
+
+    /* CONTACT */
+    .contact{text-align:center}
+
+.contact-form{
+  max-width:600px;
+  margin:40px auto 0;
+  background:#f7f7f9;
+  padding:30px;
+  border-radius:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:14px 15px;
+  margin-bottom:15px;
+  border:1px solid #dcdcdc;
+  border-radius:6px;
+  font-size:1rem;
+  outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#0d6efd;
+}
+
+.contact-form button{
+  width:100%;
+  padding:14px;
+  background:#0d6efd;
+  border:none;
+  color:#fff;
+  font-size:1rem;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#0b5ed7;
+}
+    .contact a{margin:0 15px;color:#00e5ff;text-decoration:none;font-weight:600}
+
+    /* FOOTER */
+    footer{
+      background:rgba(0,0,0,0.6);
+      text-align:center;padding:30px;color:#ccc;
+    }
+
+    @media(max-width:700px){
+      nav{padding:15px 20px}
+      nav ul li{margin-left:15px}
+      .hero h1{font-size:2.2rem}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="home">
+    <div class="hero">
+      <h1>Hi, I'm <span>Chandana</span></h1>
+      <p> Web Developer | HTML & CSS</p>
+      <a href="#projects">View Projects</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer who creates modern, responsive and clean websites using HTML and CSS.
+      I enjoy learning new things and building real-world projects.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">Javscript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Core and Advanced Java</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive portfolio using HTML & CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Instagram UI Clone</h3>
+        <p>Clean UI design clone.</p>
+      </div>
+      <div class="card">
+        <h3>E Commerce Website</h3>
+        <p>E-commerce website offers quality products</p>
+      </div>
+      <div class="card">
+        <h3>Coming Soon</h3>
+        <p>More projects will be added.</p>
+      </div>
+    </div>
+  </section>
+
+   
+    <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <style>
+    .contact-section{
+      padding:80px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .contact-section h2{
+      text-align:center;
+      color:#00e5ff;
+      margin-bottom:30px;
+    }
+
+    .contact-form{
+      max-width:600px;
+      margin:auto;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      padding:35px;
+      border-radius:15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+      width:100%;
+      padding:14px 15px;
+      margin-bottom:18px;
+      border:none;
+      border-radius:8px;
+      background:rgba(255,255,255,0.15);
+      color:#fff;
+      font-size:1rem;
+      outline:none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder{
+      color:#ddd;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus{
+      background:rgba(255,255,255,0.25);
+    }
+
+    .contact-form button{
+      width:100%;
+      padding:14px;
+      background:#00e5ff;
+      border:none;
+      color:#000;
+      font-size:1rem;
+      font-weight:600;
+      border-radius:30px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .contact-form button:hover{
+      background:#00bcd4;
+    }
+  </style>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Chandana | Modern Portfolio</p>
+  </footer>
+
+</body>
+</html>
